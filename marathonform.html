@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/marathonregistration">
+    <p>
+        <label for="First Name">First Name</label>
+        <input id="firstname" type="text" required>
+
+        <label for="Last Name">Last Name</label>
+        <input id="lastname" type="text" required>
+    </p>
+
+    <p>
+        <label for="raceselect">Select a Race:</label>
+    </p>
+    <p>
+        <input type="radio" name="racetype" id="Fun Run 5k" value="Fun Run 5k">
+        <label for="Funrun5k">Fun Run 5k</label>
+    </p>
+        <input type="radio" name="racetype" id="Half Marathon" value="Half Marathon">
+        <label for="halfmarathon">Half Marathon</label>
+    <p>
+        <input type="radio" name="racetype" id="Full Marathon" value="Full Marathon">
+        <label for="fullmarathon">Full Marathon</label>
+    </p>
+
+    <p>
+        <label for="Email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" required>
+    </p>
+    <p>
+        <label for="age">Select Age Group</label>
+        <select name="age" id="age">
+            <option value="under18">under 18</option>
+            <option value="18-29">18-29</option>
+            <option value="30-39">30-39</option>
+        </select>
+    </p>
+    <p>
+        <button>Register</button>
+    </p>
+    </form>
+</body>
+</html>
+
+<!-- Below is same as above but correct to reflect the way instructor created form vs my own.
+私のエントリーシートは上です。下のエントリーシートは先生いいのやり方-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Race Registration!</h1>
+    <form action="">
+    <div>
+        <label for="First Name">First Name</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="Last Name">Last Name</label>
+        <input id="lastname" type="text" required>
+    </div>
+    <p>
+        <label for="raceselect">Select a Race:</label>
+    </p>
+    <div>   
+        <input type="radio" name="racetype" id="funrun" value="funrun">
+        <label for="Funrun5k">Fun Run 5k</label>
+    </div>
+    <div> 
+        <input type="radio" name="racetype" id="half" value="half">
+        <label for="half">Half Marathon</label>
+    </div>  
+    <div>  
+        <input type="radio" name="racetype" id="full" value="full">
+        <label for="full">Full Marathon</label>
+    </div> 
+    
+
+    <div>
+        <label for="Email">Email</label>
+        <input id="email" type="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" required>
+    </div>
+    <div>
+        <label for="agegroup">Select Age Group</label>
+        <select name="agegroup" id="agegroup">
+            <option value="kids">under 18</option>
+            <option value="youngadults">18-29</option>
+            <option value="adults">30-39</option>
+            <option value="seniors">60-70</option>
+        </select>
+    </div>
+    <p>
+        <button>Register</button>
+    </p>
+    </form>
+</body>
+</html>
